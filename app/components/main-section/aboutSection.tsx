@@ -33,9 +33,9 @@ const AboutSection = () => {
               <br />
               <br />
               Finalists pitch to expert judges, and the winning team receives $1
-              million USD to bring their idea to life. Dubbed the "Nobel Prize
-              for students", the Hult Prize is featured in The New York Times,
-              Forbes, and The Wall Street Journal.
+              million USD to bring their idea to life. Dubbed the &quot;Nobel
+              Prize for students&quot;, the Hult Prize is featured in The New
+              York Times, Forbes, and The Wall Street Journal.
             </p>
           </div>
           <div className="mt-10 side-image ">

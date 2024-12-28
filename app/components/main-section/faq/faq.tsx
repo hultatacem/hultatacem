@@ -1,5 +1,5 @@
 "use client";
-import { ArrowDown01Icon, ArrowUp01Icon } from "hugeicons-react";
+import { ArrowDown01Icon } from "hugeicons-react";
 import React, { useState } from "react";
 import clx from "clsx";
 
