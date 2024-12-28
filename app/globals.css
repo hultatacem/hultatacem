@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --primary: #e6007f;
+  --accent: #ffcc00;
+  --dark: #1f2937;
+  --muted: #6b7280;
+}
+
+body {
+  color: var(--muted);
+  background: var(--background);
+}
+
+.hero-section {
+  background-image: url("/hero1.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
