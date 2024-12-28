@@ -41,6 +41,7 @@ const Footer = () => {
       className={`${
         isExpanded ? "h-auto w-full p-10 px-20" : "h-16 w-44 sticky bottom-4"
       } row-start-3 flex gap-20 flex-nowrap items-center text-white bg-primary p-4 rounded-3xl justify-evenly transition-all duration-100 mx-auto overflow-hidden flex-col md:flex-row`}
+      id="contact"
     >
       <div
         className={` items-center hidden gap-4 float-left left-0 ${

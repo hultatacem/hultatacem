@@ -35,7 +35,7 @@ const Navbar = () => {
               scrollPosition < 100 ? "text-primary" : "text-muted"
             }`}
           >
-            Home
+            <a href="#home">Home</a>
           </li>
           <li
             className={`hover:text-dark transition-all duration-400 ${
@@ -44,7 +44,7 @@ const Navbar = () => {
                 : "text-muted"
             }`}
           >
-            About
+            <a href="#about">About</a>
           </li>
           <li
             className={`hover:text-dark transition-all duration-400 ${
@@ -53,14 +53,14 @@ const Navbar = () => {
                 : "text-muted"
             }`}
           >
-            FAQ
+            <a href="#faq">FAQ</a>
           </li>
           <li
             className={`hover:text-dark transition-all duration-400 ${
               scrollPosition >= 3000 ? "text-primary" : "text-muted"
             }`}
           >
-            Contact
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

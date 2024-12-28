@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section relative  md:pt-80 pt-64 px-2 -top-[80px]">
+    <section
+      className="hero-section relative  md:pt-80 pt-64 px-2 -top-[80px]"
+      id="home"
+    >
       <section className="hero-content flex flex-col justify-evenly lg:gap-16 md:gap-16 gap-8">
         <section className="text-section flex flex-col items-center justify-center text-center text-white">
           <h2 className="md:text-4xl text-1xl font-bold ">
