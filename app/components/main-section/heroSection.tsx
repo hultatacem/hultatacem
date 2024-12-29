@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="hero-section relative  md:pt-80 pt-64 px-2 -top-[80px]"
+      className="hero-section relative  md:pt-44 pt-32 px-2 -top-[80px] overflow-hidden"
       id="home"
     >
       <section className="hero-content flex flex-col justify-evenly lg:gap-16 md:gap-16 gap-8">
@@ -26,7 +26,7 @@ const HeroSection = () => {
             }
           />
         </section>
-        <section className="logos-section flex justify-center items-center gap-10">
+        <section className="logos-section flex justify-center flex-wrap items-center gap-10">
           <span className="md:w-[300px] ">
             <Image
               src={"/hult-main-logo.png"}
