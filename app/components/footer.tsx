@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Facebook01Icon, InstagramIcon, Linkedin01Icon } from "hugeicons-react";
 
