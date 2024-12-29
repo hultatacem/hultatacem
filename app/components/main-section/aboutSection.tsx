@@ -3,8 +3,8 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div
-      className="about-section flex flex-col gap-10 max-w-screen-xl mx-auto px-5"
+    <section
+      className="about-section flex flex-col gap-10 mt-64 max-w-screen-xl mx-auto px-5"
       id="about"
     >
       <div className="about-content-text ">
@@ -43,7 +43,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
