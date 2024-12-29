@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="hero-section relative flex items-center justify-center min-h-screen overflow-hidden p-20"
+      className="hero-section relative flex items-center justify-center min-h-screen overflow-hidden md:p-20"
       id="home"
     >
       <section className="hero-content flex flex-col justify-evenly gap-8 md:gap-16">
