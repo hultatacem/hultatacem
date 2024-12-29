@@ -1,12 +1,13 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { Facebook01Icon, InstagramIcon, Linkedin01Icon } from "hugeicons-react";
 
 const Footer = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
   const buffer = 100; // Buffer zone
-  const debounceTime = 200; // Debounce delay
+  const debounceTime = 100; // Debounce delay
 
   const handleScroll = useCallback(() => {
     const scrolledToBottom =
@@ -42,8 +43,7 @@ const Footer = () => {
         isExpanded
           ? "h-auto w-full md:p-10 md:px-16 px-8 p-4"
           : "h-16 w-44 sticky bottom-4"
-      } row-start-3 flex gap-20 flex-nowrap items-center text-white bg-primary p-4 rounded-3xl justify-evenly transition-all duration-100 mx-auto overflow-hidden flex-col md:flex-row`}
-      id="contact"
+      } row-start-3 flex gap-20 flex-nowrap items-center text-white bg-primary p-4 rounded-3xl justify-evenly transition-all duration-700 mx-auto overflow-hidden flex-col md:flex-row mt-34`}
     >
       <div
         className={` items-center hidden gap-4 float-left left-0 ${
