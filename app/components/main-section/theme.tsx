@@ -4,7 +4,7 @@ import Button from "../button";
 
 const Theme = () => {
   return (
-    <div className="Theme-section flex flex-col mx-auto gap-10 max-w-screen-xl px-5 mt-32 ">
+    <div className="Theme-section flex flex-col mx-auto gap-10 max-w-screen-xl px-5 mt-64 ">
       <div className="Theme-content-text ">
         <span className="text-3xl font-bold flex items-center text-dark gap-5">
           <span className="flex items-center ml-5 align-middle justify-center bg-accent h-[1px] w-full"></span>
