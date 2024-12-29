@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <div
+    <section
       className="about-section flex flex-col gap-10 max-w-screen-xl mx-auto px-5 mt-36"
-      id="about"
+      id="contact"
     >
       <div className="about-content-text ">
         <span className="text-3xl md:text-6xl font-bold flex items-center text-dark gap-5">
@@ -82,7 +82,7 @@ const Partners = () => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
