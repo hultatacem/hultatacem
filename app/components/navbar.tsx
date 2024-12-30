@@ -41,10 +41,10 @@ const Navbar = () => {
       });
       setTimeout(() => {
         window.scrollBy({
-          top: 500, // Scroll additional 100 pixels
+          top: 800, // Scroll additional 500 pixels
           behavior: "smooth",
         });
-      }, 1000);
+      }, 2000);
     }
   };
 
