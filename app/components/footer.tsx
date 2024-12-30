@@ -6,35 +6,39 @@ import { Facebook01Icon, InstagramIcon, Linkedin01Icon } from "hugeicons-react";
 const Footer = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
-  const buffer = 100; // Buffer zone
-  const debounceTime = 100; // Debounce delay
+  const threshold = 50; // Threshold for considering the page as "scrolled to bottom"
+  const debounceTime = 500; // Increased debounce delay for smoother behavior
+  const hysteresis = 400; // Hysteresis to prevent rapid toggling
 
   const handleScroll = useCallback(() => {
-    const scrolledToBottom =
-      window.innerHeight + window.scrollY >=
-      document.body.offsetHeight - 100 - buffer;
+    const windowHeight = window.innerHeight;
+    const documentHeight = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    // Update state only if needed to avoid re-renders
-    setIsExpanded((prev) => {
-      if (scrolledToBottom && !prev) return true;
-      if (!scrolledToBottom && prev) return false;
-      return prev;
-    });
-  }, [buffer]);
+    const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
+
+    setIsExpanded((prev) =>
+      distanceFromBottom <= threshold
+        ? true
+        : distanceFromBottom > threshold + hysteresis
+        ? false
+        : prev
+    );
+  }, [threshold, hysteresis]);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    const debouncedScroll = () => {
-      clearTimeout(timeout);
-      timeout = setTimeout(handleScroll, debounceTime);
-    };
+    const debouncedScroll = () => setTimeout(handleScroll, debounceTime);
 
     window.addEventListener("scroll", debouncedScroll);
-    return () => {
-      window.removeEventListener("scroll", debouncedScroll);
-      clearTimeout(timeout);
-    };
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", debouncedScroll);
   }, [handleScroll, debounceTime]);
 
   return (
