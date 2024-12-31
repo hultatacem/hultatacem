@@ -134,8 +134,8 @@ const Footer = () => {
           <a href="mailto:hultatacem@acem.edu.np">hultatacem@acem.edu.np</a>
         </p>
         <p>Outreach and Engagement Cordinator</p>
-        <p>Niraj Bhattarai: 9863208052</p>
-        <p>Saugat Wasti: 9865458319</p>
+        <p>Niraj Bhattarai: +977 9863208052</p>
+        <p>Saugat Wasti: +977 9865458319</p>
       </span>
     </footer>
   );
