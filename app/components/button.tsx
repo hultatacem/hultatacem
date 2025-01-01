@@ -11,6 +11,8 @@ const Button = ({ link, className }: ButtonProps) => {
     <a
       href={link}
       className={`bg-primary text-white px-4 py-3 rounded-xl font-semibold md:text-lg  text-sm ${className}`}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       Register Now{" "}
     </a>
