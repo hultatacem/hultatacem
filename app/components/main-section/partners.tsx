@@ -21,7 +21,7 @@ const Partners = () => {
           extend our heartfelt gratitude to each of you for standing by us.
           Together, we’re creating something extraordinary!
         </p>
-        <div className="flex flex-wrap items-center align-middle justify-center gap-10 md:px-5 md:py-20 px-1 py-10 mb-32">
+        <div className="flex flex-wrap items-center align-middle justify-center gap-20 md:px-5 md:py-20 px-1 py-10 mb-32">
           <span className="md:w-[200px] w-[90px]">
             <Image
               src="/partners/Prabhu-Bank.png"
