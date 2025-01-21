@@ -15,10 +15,16 @@ const Partners = () => {
           </span>
           <span className="flex items-center ml-5 align-middle justify-center bg-accent h-[1px] w-full"></span>
         </span>
+        <p className="mt-10">
+          We are incredibly grateful for the support and collaboration of our
+          partners, who have been instrumental in making our event a success. We
+          extend our heartfelt gratitude to each of you for standing by us.
+          Together, we’re creating something extraordinary!
+        </p>
         <div className="flex flex-wrap items-center align-middle justify-center gap-10 md:px-5 md:py-20 px-1 py-10 mb-32">
           <span className="md:w-[200px] w-[90px]">
             <Image
-              src="/partners/griffity.png"
+              src="/partners/Prabhu-Bank.png"
               width={200}
               height={200}
               alt={"griffity"}
@@ -26,49 +32,65 @@ const Partners = () => {
           </span>
           <span className="md:w-[200px] w-[90px]">
             <Image
-              src="/partners/kalopati.png"
+              src="/partners/ncell.svg"
               width={200}
               height={200}
               alt={"griffity"}
             />
           </span>
-          <span className="md:w-[200px] w-[90px]">
-            <Image
-              src="/partners/griffity.png"
-              width={200}
-              height={200}
-              alt={"griffity"}
-            />
-          </span>
-          <span className="md:w-[200px] w-[90px]">
-            <Image
-              src="/partners/kalopati.png"
-              width={200}
-              height={200}
-              alt={"griffity"}
-            />
-          </span>
-          <span className="md:w-[200px] w-[90px]">
+          <span className="md:w-[120px] w-[90px]">
             <Image
               src="/partners/griffity.png"
+              width={120}
+              height={120}
+              alt={"griffity"}
+            />
+          </span>
+          <span className="md:w-[130px] w-[90px]">
+            <Image
+              src="/partners/aitc.png"
+              width={130}
+              height={130}
+              alt={"griffity"}
+            />
+          </span>
+          <span className="md:w-[200px] w-[90px]">
+            <Image
+              src="/partners/lcknirbana.png"
               width={200}
               height={200}
               alt={"griffity"}
             />{" "}
           </span>
-          <span className="md:w-[200px] w-[90px]">
+          <span className="md:w-[170px] w-[90px]">
             <Image
-              src="/partners/kalopati.png"
-              width={200}
-              height={200}
+              src="/partners/mahakmaha.png"
+              width={170}
+              height={170}
               alt={"griffity"}
             />
           </span>
           <span className="md:w-[200px] w-[90px]">
             <Image
-              src="/partners/griffity.png"
+              src="/partners/eruka.png"
               width={200}
               height={200}
+              alt={"griffity"}
+            />
+          </span>
+          <span className="md:w-[160px] w-[90px]">
+            <Image
+              src="/partners/chrocet.png"
+              width={200}
+              height={200}
+              alt={"griffity"}
+            />
+          </span>
+          <span className="md:w-[150px] w-[60px]">
+            <Image
+              src="/partners/apple.png"
+              width={150}
+              height={150}
               alt={"griffity"}
             />
           </span>
