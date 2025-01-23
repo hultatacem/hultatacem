@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Partners = () => {
   return (
@@ -39,12 +40,14 @@ const Partners = () => {
             />
           </span>
           <span className="md:w-[120px] w-[90px]">
-            <Image
-              src="/partners/griffity.png"
-              width={120}
-              height={120}
-              alt={"griffity"}
-            />
+            <Link href={"https://www.instagram.com/griffitystudios/"}>
+              <Image
+                src="/partners/griffity.png"
+                width={120}
+                height={120}
+                alt={"griffity"}
+              />
+            </Link>
           </span>
           <span className="md:w-[130px] w-[90px]">
             <Image
