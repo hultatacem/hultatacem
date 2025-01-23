@@ -39,12 +39,13 @@ const Navbar = () => {
         top: (target as HTMLElement).offsetTop + footerHeight, // Subtract footer height from scroll position
         behavior: "smooth",
       });
+      const delay = window.innerWidth < 768 ? 1500 : 1000;
       setTimeout(() => {
         window.scrollBy({
           top: 800, // Scroll additional 500 pixels
           behavior: "smooth",
         });
-      }, 2000);
+      }, delay);
     }
   };
 

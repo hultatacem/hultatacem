@@ -7,7 +7,8 @@ const Footer = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const threshold = 50; // Threshold for considering the page as "scrolled to bottom"
-  const debounceTime = 500; // Increased debounce delay for smoother behavior
+
+  const debounceTime = window.innerWidth < 768 ? 700 : 500; // Increased debounce delay for smoother behavior
   const hysteresis = 400; // Hysteresis to prevent rapid toggling
 
   const handleScroll = useCallback(() => {
@@ -93,8 +94,8 @@ const Footer = () => {
         >
           <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
         </div>
-        <span className="flex-col items-center gap-2 mt-10 flex">
-          <p className={`${isExpanded ? "" : "hidden"} font-extrabold`}>
+        <span className="flex-col items-center gap-2  flex">
+          <p className={`${isExpanded ? "mt-10" : "hidden "} font-extrabold`}>
             Follow us:{" "}
           </p>{" "}
           <span
