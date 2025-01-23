@@ -54,7 +54,7 @@ const Footer = () => {
           isExpanded ? "md:flex md:min-w-[100px]" : "hidden"
         }`}
       >
-        <Image src="footerlogo.svg" alt="logo" width={150} height={150} />
+        <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
       </div>
       <span className="md:flex  items-center gap-4 hidden">
         <p className={`${isExpanded ? "" : "hidden "} font-bold text-xl`}>
@@ -91,9 +91,9 @@ const Footer = () => {
             isExpanded ? "" : "hidden"
           }`}
         >
-          <Image src="footerlogo.svg" alt="logo" width={150} height={150} />
+          <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
         </div>
-        <span className="flex-col items-center gap-2 flex">
+        <span className="flex-col items-center gap-2 mt-10 flex">
           <p className={`${isExpanded ? "" : "hidden"} font-extrabold`}>
             Follow us:{" "}
           </p>{" "}
