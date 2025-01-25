@@ -89,13 +89,13 @@ const Footer = () => {
       <span className="flex md:hidden flex-col mobile-footer gap-2">
         <div
           className={`flex items-center min-w-8 min-h-10 gap-4 float-left left-0 ${
-            isExpanded ? "" : "hidden"
+            isExpanded ? "" : "hidden "
           }`}
         >
           <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
         </div>
         <span className="flex-col items-center gap-2  flex">
-          <p className={`${isExpanded ? "mt-10" : "hidden "} font-extrabold`}>
+          <p className={`${isExpanded ? " mt-10" : "hidden"} font-extrabold`}>
             Follow us:{" "}
           </p>{" "}
           <span
