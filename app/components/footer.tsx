@@ -40,43 +40,102 @@ const Footer = () => {
 
     return () => window.removeEventListener("scroll", debouncedScroll);
   }, []);
-
   return (
     <footer
       className={`${
-        isExpanded ? "h-auto" : "h-16"
-      } row-start-3 flex gap-6 flex-wrap items-center text-white bg-primary p-4 rounded-full justify-center transition-all duration-300`}
+        isExpanded
+          ? "h-auto w-full md:p-10 md:px-16 px-8 p-4"
+          : "h-16 w-44 sticky bottom-4"
+      } row-start-3 flex gap-20 flex-nowrap items-center text-white bg-primary p-4 rounded-3xl justify-evenly transition-all duration-700 mx-auto overflow-hidden flex-col md:flex-row mt-34`}
     >
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        className={` items-center hidden gap-4 float-left left-0 ${
+          isExpanded ? "md:flex md:min-w-[100px]" : "hidden"
+        }`}
       >
-        <Image
-          aria-hidden
-          src="/file.svg"
-          alt="File icon"
-          width={16}
-          height={16}
-        />
-        Learn
-      </a>
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/window.svg"
-          alt="Window icon"
-          width={16}
-          height={16}
-        />
-        Templates
-      </a>
+        <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
+      </div>
+      <span className="md:flex  items-center gap-4 hidden">
+        <p className={`${isExpanded ? "" : "hidden "} font-bold text-xl`}>
+          Follow us:{" "}
+        </p>{" "}
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://www.instagram.com/hultatacem/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://www.instagram.com/hultatacem/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin01Icon />
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://www.instagram.com/hultatacem/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Facebook01Icon />
+        </a>
+      </span>
+      <span className="flex md:hidden flex-col mobile-footer gap-2">
+        <div
+          className={`flex items-center min-w-8 min-h-10 gap-4 float-left left-0 ${
+            isExpanded ? "" : "hidden "
+          }`}
+        >
+          <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
+        </div>
+        <span className="flex-col items-center gap-2  flex">
+          <p className={`${isExpanded ? " " : "hidden mt-10"} font-extrabold`}>
+            Follow us:{" "}
+          </p>{" "}
+          <span
+            className="flex
+           gap-4"
+          >
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://www.instagram.com/hultatacem/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://www.instagram.com/hultatacem/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin01Icon />
+            </a>
+            <a
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://www.instagram.com/hultatacem/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook01Icon />
+            </a>
+          </span>
+        </span>
+      </span>
+      <span className={`flex flex-col gap-2 ${isExpanded ? "" : "hidden"}`}>
+        <h1 className="font-bold text-xl">Contact Us</h1>
+        <p>
+          <a href="mailto:hultatacem@acem.edu.np">hultatacem@acem.edu.np</a>
+        </p>
+        <p>Outreach and Engagement Cordinator</p>
+        <p>Niraj Bhattarai: +977 9863208052</p>
+        <p>Saugat Wasti: +977 9865458319</p>
+      </span>
     </footer>
   );
 };
