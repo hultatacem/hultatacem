@@ -95,7 +95,7 @@ const Footer = () => {
           <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
         </div>
         <span className="flex-col items-center gap-2  flex">
-          <p className={`${isExpanded ? " mt-10" : "hidden"} font-extrabold`}>
+          <p className={`${isExpanded ? " " : "hidden mt-10"} font-extrabold`}>
             Follow us:{" "}
           </p>{" "}
           <span
