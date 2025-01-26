@@ -14,7 +14,7 @@ const Faq = () => {
     {
       question: "Who can participate?",
       answer:
-        "Any current university student can participate. Teams must consist of 3-4 members from the same university.",
+        "Any current university student can participate. Teams must consist of 3-4 members from the any university.",
     },
     {
       question: "What is the timeline for the competition?",
