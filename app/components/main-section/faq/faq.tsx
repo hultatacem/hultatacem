@@ -19,7 +19,7 @@ const Faq = () => {
     {
       question: "What is the timeline for the competition?",
       answer:
-        "The OnCampus program final will be at mid febuary, with the global finals taking place the following summer.",
+        "The OnCampus program final will be at between the first or second of febuary, with the global finals taking place the following summer.",
     },
     {
       question: "What kind of support is provided?",
