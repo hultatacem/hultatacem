@@ -43,14 +43,14 @@ const Theme = () => {
             Ready to change the world?
           </h1>
           <p>
-            Pre-registration is now open! Sign up to receive information about
-            next steps and updates about this year’s competition
+            Registration is now cloased! Thank you to everyone involved in
+            making the program a success! Your enthusiasm, effort, and support
+            have been invaluable. We are incredibly grateful for your
+            participation and dedication. Stay tuned for the next edition of the
+            Hult Prize onCampus next year. We can't wait to see you all again
+            and continue this amazing journey together!
           </p>
-          <Button
-            link={
-              "https://www.hultprize.org/startup-pre-registration-is-now-open/"
-            }
-          />
+          <Button link={"https://www.hultprize.org/"} />
         </section>
         <section className="md:w-1/2 w-full md:ml-44">
           <Image src={"/changeworld.webp"} width={500} height={500} alt={""} />

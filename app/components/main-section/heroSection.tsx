@@ -20,11 +20,11 @@ const HeroSection = () => {
             Empowering the Next Generation of Social Entrepreneurs
           </p>
           <br />
-          <Button
+          {/* <Button
             link={
               "https://www.hultprize.org/startup-pre-registration-is-now-open/"
             }
-          />
+          /> */}
         </section>
         <section className="logos-section flex justify-center flex-wrap items-center gap-10">
           <span className="w-[clamp(100px,30vw,300px)]">

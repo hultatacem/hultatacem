@@ -14,7 +14,7 @@ const Button = ({ link, className }: ButtonProps) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Register Now{" "}
+      Learn More{" "}
     </a>
   );
 };
