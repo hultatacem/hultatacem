@@ -47,8 +47,8 @@ const Theme = () => {
             making the program a success! Your enthusiasm, effort, and support
             have been invaluable. We are incredibly grateful for your
             participation and dedication. Stay tuned for the next edition of the
-            Hult Prize onCampus next year. We can't wait to see you all again
-            and continue this amazing journey together!
+            Hult Prize onCampus next year. We can&apos;t wait to see you all
+            again and continue this amazing journey together!
           </p>
           <Button link={"https://www.hultprize.org/"} />
         </section>
