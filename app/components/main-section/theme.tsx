@@ -43,12 +43,12 @@ const Theme = () => {
             Ready to change the world?
           </h1>
           <p>
-            Registration is now cloased! Thank you to everyone involved in
-            making the program a success! Your enthusiasm, effort, and support
-            have been invaluable. We are incredibly grateful for your
-            participation and dedication. Stay tuned for the next edition of the
-            Hult Prize onCampus next year. We can&apos;t wait to see you all
-            again and continue this amazing journey together!
+            Registration is now closed! Thank you to everyone involved in making
+            the program a success! Your enthusiasm, effort, and support have
+            been invaluable. We are incredibly grateful for your participation
+            and dedication. Stay tuned for the next edition of the Hult Prize
+            onCampus next year. We can&apos;t wait to see you all again and
+            continue this amazing journey together!
           </p>
           <Button link={"https://www.hultprize.org/"} />
         </section>
