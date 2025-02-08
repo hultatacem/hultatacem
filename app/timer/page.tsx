@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import Button from "../components/timer/button";
 
-const ROUND_TIME = 4 * 60; // 10 seconds for testing, change back to 4 * 60 for 4 minutes
+const ROUND_TIME = 4 * 60; // 4 * 60 for 4 minutes
 const TOTAL_ROUNDS = 2;
 
 export default function Timer() {
@@ -73,7 +74,6 @@ export default function Timer() {
     setCurrentRound(currentRound + 1);
     setTime(ROUND_TIME);
     setIsRoundCompleted(false);
-    setIsRunning(true);
   };
 
   const goToRound = (round: number) => {
@@ -136,10 +136,11 @@ export default function Timer() {
           {isCompleted && (
             <Button
               onClick={() => goToRound(1)}
-              className="w-24 bg-primary"
+              className="w-30 bg-primary"
               disabled={false}
             >
-              Pitching Round
+              Pitching <br />
+              Round
             </Button>
           )}
           {isRoundCompleted && (
@@ -153,10 +154,11 @@ export default function Timer() {
           )}
           <Button
             onClick={handleReset}
-            className="w-24 bg-primary"
+            className="w-28 bg-primary"
             disabled={false}
           >
-            Reset Round
+            Reset
+            <br /> Round
           </Button>
         </div>
         {isCompleted && (
@@ -176,10 +178,14 @@ export default function Timer() {
           </div>
         )}
       </div>
-      <div className="absolute bottom-4 left-4 flex space-x-2">
+      <div className="absolute top-4 left-4 ">
+        <Image src="/footer-logo.png" alt="logo" width={300} height={300} />
+      </div>
+
+      <div className="absolute bottom-4 right-16 flex space-x-2">
         <Button
           onClick={() => goToRound(1)}
-          className={`w-24 ${
+          className={`w-30  ${
             currentRound == 1 ? "bg-pink-400" : "hover:bg-pink-500 bg-primary"
           }`}
           disabled={currentRound == 1}
