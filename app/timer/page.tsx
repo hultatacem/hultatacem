@@ -172,7 +172,7 @@ export default function Timer() {
             className="mt-16 text-3xl font-bold text-center text-white"
             aria-live="polite"
           >
-            Time's up! Get ready for the Q&A!
+            Time&apos;s up! Get ready for the Q&A!
           </div>
         )}
       </div>
